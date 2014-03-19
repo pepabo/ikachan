@@ -43,6 +43,24 @@ class IkachanTest < Test::Unit::TestCase
     Ikachan.notice('foo bar buzz')
   end
 
+  def test_privmsg
+    Ikachan.expects(:join)
+
+    http = mock('http')
+    http.stub_everything
+    http.expects(:request)
+    Net::HTTP.expects(:new).with('irc.example.com', 4649).returns(http)
+
+    req = mock('req')
+    req.stub_everything
+    req.expects(:form_data=).with do |params|
+      (params['channel'] == '#example') && (params['message'] == 'foo bar buzz')
+    end
+    Net::HTTP::Post.expects(:new).with('/privmsg').returns(req)
+
+    Ikachan.privmsg('foo bar buzz')
+  end
+
   def test_rescue_timeout_error
     Ikachan.expects(:join)
 

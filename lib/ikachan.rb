@@ -18,6 +18,11 @@ module Ikachan
     request('/notice', { 'channel' => @@channel, 'message' => message })
   end
 
+  def privmsg(message)
+    join
+    request('/privmsg', { 'channel' => @@channel, 'message' => message })
+  end
+
   def uri_for(path = nil)
     uri = URI.parse("#{@@url}/#{path}")
     uri.path = Pathname.new(uri.path).cleanpath.to_s
