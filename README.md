@@ -1,6 +1,6 @@
 # Ikachan
 
-TODO: Write a gem description
+Ruby wrapper of Ikachan
 
 ## Installation
 
@@ -18,7 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+Ikachan.url = "http://irc.example.com:4649"
+Ikachan.channel = "#example"
+Ikachan.notice 'awesome comment'
+```
 
 ## Contributing
 
