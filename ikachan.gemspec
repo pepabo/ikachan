@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Ikachan::VERSION
   spec.authors       = ["SHIBATA Hiroshi"]
   spec.email         = ["shibata.hiroshi@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Ruby wrapper of Ikachan}
+  spec.description   = %q{Ruby wrapper of Ikachan}
+  spec.homepage      = "https://github.com/paperboy-all/ikachan"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
