@@ -1,5 +1,8 @@
 # Ikachan
 
+[![Gem Version](https://badge.fury.io/rb/ikachan.png)](http://badge.fury.io/rb/ikachan)
+[![Build Status](https://travis-ci.org/paperboy-all/ikachan.png?branch=master)](https://travis-ci.org/paperboy-all/ikachan)
+
 Ruby wrapper of Ikachan
 
 ## Installation
