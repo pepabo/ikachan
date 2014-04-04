@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["shibata.hiroshi@gmail.com"]
   spec.summary       = %q{Ruby wrapper of Ikachan}
   spec.description   = %q{Ruby wrapper of Ikachan}
-  spec.homepage      = "https://github.com/paperboy-all/ikachan"
+  spec.homepage      = "https://github.com/pepabo/ikachan"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
